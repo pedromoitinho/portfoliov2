@@ -1,86 +1,104 @@
 .about {
-  padding: 4rem 0;
+	padding: 4rem 0;
 }
 
 .about-content {
-  display: flex;
-  gap: 4rem;
-  margin-top: 2rem;
+	display: flex;
+	gap: 4rem;
+	margin-top: 2rem;
 }
 
 .about-text {
-  flex: 1;
+	flex: 1;
 }
 
 .about-text p {
-  margin-bottom: 1.5rem;
-  color: var(--text-gray);
-  font-size: 1.05rem;
+	margin-bottom: 1.5rem;
+	color: var(--text-gray);
+	font-size: 1.05rem;
 }
 
 .about-details {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  margin: 2.5rem 0;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.5rem;
+	margin: 2.5rem 0;
 }
 
 .detail {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .detail-label {
-  font-size: 0.9rem;
-  color: var(--text-gray);
-  margin-bottom: 0.5rem;
+	font-size: 0.9rem;
+	color: var(--text-gray);
+	margin-bottom: 0.5rem;
 }
 
 .detail-value {
-  font-size: 1.1rem;
-  font-weight: 600;
+	font-size: 1.1rem;
+	font-weight: 600;
 }
 
 .about-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .image-frame {
-  position: relative;
-  width: 350px;
-  height: 350px;
-  border: 2px solid var(--accent);
-  border-radius: var(--border-radius);
+	position: relative;
+	width: 350px;
+	height: 350px;
+	border: 2px solid var(--accent);
+	border-radius: var(--border-radius);
 }
 
 .image-placeholder {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  border-radius: var(--border-radius);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	border-radius: var(--border-radius);
 }
+
 .image-placeholder img {
-  width: 100%;
-  object-fit: contain;
-  filter: saturate(0.5);
+	width: 100%;
+	object-fit: contain;
+	filter: saturate(0.5);
 }
+
+.about .btn-primary {
+	margin-right: 5rem;
+}
+
+#curriculo {
+	background: none;
+	border: 2px solid var(--accent);
+	color: white;
+}
+
 @media (max-width: 992px) {
-  .about-content {
-    flex-direction: column-reverse;
-  }
-  .image-frame {
-    width: 250px;
-    height: 250px;
-  }
+	.about-content {
+		flex-direction: column-reverse;
+	}
+
+	.image-frame {
+		width: 250px;
+		height: 250px;
+	}
+
+	.about .btn-primary {
+		margin-top: 1rem;
+	}
+
 }
 
 @media (max-width: 576px) {
-  .about-details {
-    grid-template-columns: 1fr;
-  }
+	.about-details {
+		grid-template-columns: 1fr;
+	}
 }
