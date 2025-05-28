@@ -1,5 +1,4 @@
 import "./About.css";
-import Profile from "./profile.jpg";
 import CurriculoPDF from "./public/curriculo pedro final final.pdf";
 
 const About = () => {
@@ -30,15 +29,8 @@ const About = () => {
 						Currículo
 					</a>
 				</div>
-				<div className="about-image">
-					<div className="image-frame">
-						<div className="image-placeholder">
-							<img src={Profile} />
-						</div>
-					</div>
-				</div>
 			</div>
-		</section>
+		</section >
 	);
 };
 
