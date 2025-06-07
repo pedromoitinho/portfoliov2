@@ -1,11 +1,15 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useLanguage } from "../../contexts/LanguageContext";
+import { translations } from "../../translations/translations";
 import "./Header.css";
 
 const Header = ({ darkMode, setDarkMode }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const { language, toggleLanguage } = useLanguage();
+  const t = translations[language];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,12 +25,12 @@ const Header = ({ darkMode, setDarkMode }) => {
   };
 
   const navItems = [
-    { name: "Sobre", href: "#about" },
-    { name: "Experiências", href: "#experience" },
-    { name: "Educação", href: "#education" },
-    { name: "Habilidades", href: "#skills" },
-    { name: "Projetos", href: "#projects" },
-    { name: "Contato", href: "#contact" },
+    { name: t.nav.about, href: "#about" },
+    { name: t.nav.experience, href: "#experience" },
+    { name: t.nav.education, href: "#education" },
+    { name: t.nav.skills, href: "#skills" },
+    { name: t.nav.projects, href: "#projects" },
+    { name: t.nav.contact, href: "#contact" },
   ];
 
   return (
@@ -47,6 +51,16 @@ const Header = ({ darkMode, setDarkMode }) => {
             ))}
           </ul>
         </nav>
+
+        <div className="header-actions">
+          <button 
+            className="language-toggle"
+            onClick={toggleLanguage}
+            aria-label="Toggle language"
+          >
+            {language === 'pt' ? '🇺🇸' : '🇧🇷'}
+          </button>
+        </div>
 
         <div className="nav-toggle" onClick={toggleMenu}>
           <div className={`hamburger ${menuOpen ? "active" : ""}`}>

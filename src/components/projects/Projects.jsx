@@ -1,17 +1,21 @@
 "use client";
 
 import { useState } from "react";
+import { useLanguage } from "../../contexts/LanguageContext";
+import { translations } from "../../translations/translations";
 import "./Projects.css";
 import Codecraft from "./codecraft.jpeg";
+
 const Projects = () => {
 	const [activeFilter, setActiveFilter] = useState("all");
+	const { language } = useLanguage();
+	const t = translations[language];
 
 	const projects = [
 		{
 			id: 1,
-			title: "Vitais Consultoria",
-			description:
-				"Projeto real, realizado para uma empresa de consultorias da minha cidade",
+			title: t.projects.list[0].title,
+			description: t.projects.list[0].description,
 			category: "web",
 			technologies: ["React", "Typescript", "EmailJS", "IMGBot"],
 			image:
@@ -20,9 +24,8 @@ const Projects = () => {
 		},
 		{
 			id: 2,
-			title: "CodeCraft",
-			description:
-				"Abertura da minha empresa, projeto completamente desenvolvido por mim em um projeto fullstack",
+			title: t.projects.list[1].title,
+			description: t.projects.list[1].description,
 			category: "web",
 			technologies: ["React", "Typescript", "EmailJS"],
 			image: Codecraft,
@@ -30,9 +33,8 @@ const Projects = () => {
 		},
 		{
 			id: 3,
-			title: "Microserviço de Login e de Entrega de Formulários",
-			description:
-				"Microserviço em backend desenvolvido, para suprir a nova ideia da cliente da Vitais Consultoria",
+			title: t.projects.list[2].title,
+			description: t.projects.list[2].description,
 			category: "backend",
 			technologies: ["Spring", "Docker", "Spring Security", "JAuth", "Microserviço", "Maven"],
 			image: "https://www.showmetech.com.br/wp-content/uploads//2018/11/conheca-cursos-de-programacao-gratis-1132x600-jpg-webp.webp",
@@ -41,9 +43,9 @@ const Projects = () => {
 	];
 
 	const filters = [
-		{ name: "Todos", value: "all" },
-		{ name: "Web", value: "web" },
-		{ name: "Backend", value: "backend" }
+		{ name: t.projects.filters.all, value: "all" },
+		{ name: t.projects.filters.web, value: "web" },
+		{ name: t.projects.filters.backend, value: "backend" }
 	];
 
 	const filteredProjects =
@@ -53,7 +55,7 @@ const Projects = () => {
 
 	return (
 		<section id="projects" className="projects">
-			<h2>Meus Projetos</h2>
+			<h2>{t.projects.title}</h2>
 			<div className="project-filters">
 				{filters.map((filter) => (
 					<button
@@ -76,7 +78,7 @@ const Projects = () => {
 							></div>
 							<div className="project-overlay">
 								<a href={project.link} className="project-link" target="_blank">
-									Visualizar Projeto
+									{t.projects.viewProject}
 								</a>
 							</div>
 						</div>

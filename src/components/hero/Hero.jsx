@@ -1,23 +1,28 @@
+import { useLanguage } from "../../contexts/LanguageContext";
+import { translations } from "../../translations/translations";
 import "./Hero.css";
 
 const Hero = () => {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return (
     <section id="home" className="hero">
       <div className="hero-content">
         <h1>
-          <span className="greeting">Oi, eu sou</span>
-          <span className="name">Pedro Moitinho</span>
-          <span className="title">Engenheiro de Software</span>
+          <span className="greeting">{t.hero.greeting}</span>
+          <span className="name">{t.hero.name}</span>
+          <span className="title">{t.hero.title}</span>
         </h1>
         <p className="description">
-          Arquiteto e desenvolvo soluções reais para a engenharia web.
+          {t.hero.description}
         </p>
         <div className="hero-buttons">
           <a href="#projects" className="btn btn-primary">
-            Descubra Meu Trabalho
+            {t.hero.cta}
           </a>
           <a href="#contact" className="btn btn-secondary">
-            Contato
+            {t.hero.contact}
           </a>
         </div>
       </div>

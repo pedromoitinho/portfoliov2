@@ -1,17 +1,22 @@
+import { useLanguage } from "../../contexts/LanguageContext";
+import { translations } from "../../translations/translations";
 import "./Skills.css";
 
 const Skills = () => {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   const skillCategories = [
     {
-      title: "Frontend",
-      skills: ["React", "Angular", "Typescript"],
+      title: t.skills.categories.frontend,
+      skills: ["React", "Typescript"],
     },
     {
-      title: "Backend",
-      skills: ["Node.js / Express", "SQL", "Java / Spring", "Rest"],
+      title: t.skills.categories.backend,
+      skills: ["Java / Spring", "Api Development", "Docker", "Node.JS / Express"],
     },
     {
-      title: "Ferramentas e Metodologias",
+      title: t.skills.categories.tools,
       skills: [
         "Git",
         "Postman",
@@ -26,7 +31,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="skills">
-      <h2>Habilidades</h2>
+      <h2>{t.skills.title}</h2>
       <div className="skills-container">
         {skillCategories.map((category, index) => (
           <div key={index} className="skill-category">

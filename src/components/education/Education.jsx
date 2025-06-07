@@ -1,27 +1,16 @@
-import React from "react";
+import { useLanguage } from "../../contexts/LanguageContext";
+import { translations } from "../../translations/translations";
 import "./Education.css";
 
 const Education = () => {
-    const educationList = [
-        {
-            degree: "Bacharelado em Engenharia de Software",
-            institution: "Universidade Nobre",
-            period: "2023 - 2027",
-            description: "",
-        },
-        {
-            degree: "Web Development Bootcamp",
-            institution: "Udemy",
-            period: "2025",
-            description: "Curso focado em sistemas web escaláveis.",
-        },
-    ];
+    const { language } = useLanguage();
+    const t = translations[language];
 
     return (
         <section id="education" className="education">
-            <h2>Educação</h2>
+            <h2>{t.education.title}</h2>
             <ul className="edu-timeline">
-                {educationList.map((edu, index) => (
+                {t.education.list.map((edu, index) => (
                     <li key={index} className="edu-item">
                         <div className="edu-dot" />
                         <div className="edu-content">

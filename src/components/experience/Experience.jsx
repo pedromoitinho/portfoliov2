@@ -1,29 +1,16 @@
-import React from "react";
+import { useLanguage } from "../../contexts/LanguageContext";
+import { translations } from "../../translations/translations";
 import "./Experience.css";
 
 const Experience = () => {
-    const experiences = [
-        {
-            title: "Estágio em TI",
-            company: "Lupalina",
-            period: "01/24 - 11/24",
-            description:
-                "Aprimorei meus conhecimentos em React, desenvolvendo uma landing page para a empresa, além de expandir meu entendimento sobre bancos de dados e infraestrutura.",
-        },
-        {
-            title: "Estágio em Desenvolvimento",
-            company: "InfoAtiva",
-            period: "10/24 - 05/25",
-            description:
-                "Desenvolvemos um chatbot, além de otimizar seu desempenho e corrigir bugs.O que resultou em uma redução de 25% nas reclamações de usuários sobre erros e falhas.",
-        },
-    ];
+    const { language } = useLanguage();
+    const t = translations[language];
 
     return (
         <section id="experience" className="experience">
-            <h2>Experiência</h2>
+            <h2>{t.experience.title}</h2>
             <ul className="timeline">
-                {experiences.map((exp, index) => (
+                {t.experience.jobs.map((exp, index) => (
                     <li key={index} className="timeline-item">
                         <div className="timeline-dot" />
                         <div className="timeline-content">
