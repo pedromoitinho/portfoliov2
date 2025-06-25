@@ -33,23 +33,18 @@ export const translations = {
 			title: "Experiência",
 			jobs: [
 				{
-					title: "Desenvolvedor Fullstack Web",
+					title: "Desenvolvedor Fullstack",
 					company: "Codecraft",
 					period: "05/25 - Atual",
 					description: "• Desenvolvo e-commerces de alta performance com uma stack moderna (React + Spring), consumindo APIs, integrando MercadoPago e JAuths com autenticação por tokens e utilizando PostgreSQL para um banco de dados eficiente e escalável.<br><br>• Desenvolvimento do zero de sites institucionais, landing pages, e-commerces para empresas.<br><br>• Liderança e organização da equipe para manter boas práticas de clean code e estrutura de negócio."
 				},
 				{
-					title: "Desenvolvedor Fullstack Web",
+					title: "Desenvolvedor Fullstack",
 					company: "InfoAtiva",
 					period: "10/24 - 05/25",
 					description: "• Desenvolvi e mantive o chatbot principal da empresa com Spring Boot e React.<br><br>• Integrei a API do Twilio para comunicação em tempo real via mensagem e voz. <br><br>• Implementei melhorias, aumentando a eficiência do atendimento ao cliente e a satisfação dos usuários."
 				},
-				{
-					title: "Desenvolvedor Frontend Web",
-					company: "Lupalina",
-					period: "01/24 - 11/24",
-					description: "• Adquiri experiência prática em gestão de bancos de dados e infraestrutura."
-				},
+				
 			]
 		},
 		education: {
@@ -167,23 +162,18 @@ export const translations = {
 			title: "Experience",
 			jobs: [
 				{
-					title: "Fullstack Web Developer",
+					title: "Fullstack Developer",
 					company: "Codecraft",
 					period: "05/25 - Current",
 					description: "• I develop high-performance e-commerce platforms with a modern stack (React + Spring), consuming APIs, integrating MercadoPago and JAuths with token authentication and using PostgreSQL for an efficient and scalable database.<br><br>• Development from scratch of institutional websites, landing pages, e-commerce for companies.<br><br>• Leadership and team organization to maintain good clean code practices and business structure."
 				},
 				{
-					title: "Fullstack Web Developer",
+					title: "Fullstack Developer",
 					company: "InfoAtiva",
 					period: "10/24 - 05/25",
 					description: "• I developed and maintained the company's main chatbot with Spring Boot and React.<br><br>• I integrated the Twilio API for real-time communication via message and voice.<br><br>• I implemented improvements, increasing customer service efficiency and user satisfaction."
 				},
-				{
-					title: "Frontend Web Developer",
-					company: "Lupalina",
-					period: "01/24 - 11/24",
-					description: "• I gained practical experience in database management and infrastructure."
-				},
+
 			]
 		},
 		education: {
