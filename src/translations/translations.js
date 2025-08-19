@@ -163,17 +163,16 @@ export const translations = {
 			jobs: [
 				{
 					title: "Fullstack Developer",
-					company: "Codecraft",
-					period: "05/25 - Current",
-					description: "• I develop high-performance e-commerce platforms with a modern stack (React + Spring), consuming APIs, integrating MercadoPago and JAuths with token authentication and using PostgreSQL for an efficient and scalable database.<br><br>• Development from scratch of institutional websites, landing pages, e-commerce for companies.<br><br>• Leadership and team organization to maintain good clean code practices and business structure."
+					company: "Infoativa",
+					period: "10/24 - 05/2025",
+					description: "• We developed the company's chatbot using Node and React.<br><br>• I integrated the Twilio API for real-time communication via messaging and voice.<br><br>• I implemented improvements, increasing customer service efficiency and user satisfaction."
 				},
 				{
 					title: "Fullstack Developer",
-					company: "InfoAtiva",
-					period: "10/24 - 05/25",
-					description: "• I developed and maintained the company's main chatbot with Spring Boot and React.<br><br>• I integrated the Twilio API for real-time communication via message and voice.<br><br>• I implemented improvements, increasing customer service efficiency and user satisfaction."
+					company: "Lupalina",
+					period: "01/24 - 10/24",
+					description: "• I helped the company maintain the TOTVS system, manage databases, etc..."
 				},
-
 			]
 		},
 		education: {
