@@ -185,10 +185,10 @@ export const translations = {
 					description: ""
 				},
 				{
-					degree: "Web Development Bootcamp",
-					institution: "",
-					period: "2025",
-					description: "Course focused on scalable web systems."
+					degree: "System Development",
+					institution: "SENAI",
+					period: "2025-2027",
+					description: ""
 				}
 			]
 		},
