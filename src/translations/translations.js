@@ -34,15 +34,15 @@ export const translations = {
 			jobs: [
 				{
 					title: "Desenvolvedor Fullstack",
-					company: "Codecraft",
-					period: "05/25 - Atual",
-					description: "• Desenvolvo e-commerces de alta performance com uma stack moderna (React + Spring), consumindo APIs, integrando MercadoPago e JAuths com autenticação por tokens e utilizando PostgreSQL para um banco de dados eficiente e escalável.<br><br>• Desenvolvimento do zero de sites institucionais, landing pages, e-commerces para empresas.<br><br>• Liderança e organização da equipe para manter boas práticas de clean code e estrutura de negócio."
+					company: "Infoativa",
+					period: "10/24 - 05/2025",
+					description: "• Desenvolvemos um chatbot da empresa com Node e React.<br><br>• Integrei a API do Twilio para comunicação em tempo real via mensagem e voz.<br><br> • Implementei melhorias, aumentando a eficiência do atendimento ao cliente e a satisfação dos usuários."
 				},
 				{
 					title: "Desenvolvedor Fullstack",
-					company: "InfoAtiva",
-					period: "10/24 - 05/25",
-					description: "• Desenvolvi e mantive o chatbot principal da empresa com Spring Boot e React.<br><br>• Integrei a API do Twilio para comunicação em tempo real via mensagem e voz. <br><br>• Implementei melhorias, aumentando a eficiência do atendimento ao cliente e a satisfação dos usuários."
+					company: "Lupalina",
+					period: "01/24 - 10/24",
+					description: "• AJudei a empresa a manter o sistema TOTVS, gerenciar banco de dados, etc..."
 				},
 				
 			]
@@ -57,10 +57,10 @@ export const translations = {
 					description: ""
 				},
 				{
-					degree: "Web Development Bootcamp",
-					institution: "",
-					period: "2025",
-					description: "Curso focado em sistemas web escaláveis."
+					degree: "Desenvolvimento de Sistemas",
+					institution: "SENAI",
+					period: "2025 - 2027",
+					description: ""
 				}
 			]
 		},
