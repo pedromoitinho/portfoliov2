@@ -11,8 +11,8 @@ export const translations = {
 		hero: {
 			greeting: "Oi, eu sou",
 			name: "Pedro Moitinho",
-			title: "Fullstack Web",
-			description: "Arquiteto e desenvolvo soluções reais para a engenharia web.",
+			title: "Desenvolvedor FullStack",
+			description: "Arquiteto e desenvolvo soluções reais",
 			cta: "Descubra Meu Trabalho",
 			contact: "Contato"
 		},
@@ -33,18 +33,18 @@ export const translations = {
 			title: "Experiência",
 			jobs: [
 				{
-					title: "Desenvolvedor Fullstack",
+					title: "Desenvolvedor Fullstack, Estagiário",
 					company: "Infoativa",
 					period: "10/24 - 05/2025",
-					description: "• Desenvolvemos um chatbot da empresa com Node e React.<br><br>• Integrei a API do Twilio para comunicação em tempo real via mensagem e voz.<br><br> • Implementei melhorias, aumentando a eficiência do atendimento ao cliente e a satisfação dos usuários."
+					description: "• Desenvolvemos um chatbot Node, React, Typescript, Express, PostgreSQL, Twilio e Git.<br><br>• Ajudei a resolver bugs diários."
 				},
 				{
-					title: "Desenvolvedor Fullstack",
+					title: "Desenvolvedor Backend, Estagiário",
 					company: "Lupalina",
 					period: "01/24 - 10/24",
-					description: "• AJudei a empresa a manter o sistema TOTVS, gerenciar banco de dados, etc..."
+					description: "• Gerenciamento de banco de dados(MySQL), e ajudei a integrar o projeto(Spring) via Apis Rest e microserviços."
 				},
-				
+
 			]
 		},
 		education: {
@@ -76,22 +76,24 @@ export const translations = {
 			title: "Meus Projetos",
 			filters: {
 				all: "Todos",
-				web: "Web",
+				web: "Fullstack",
 				backend: "Backend"
 			},
 			viewProject: "Visualizar Projeto",
 			list: [
 				{
 					title: "Vitais Consultoria",
-					description: "Projeto real, realizado para uma empresa de consultorias da minha cidade"
-				},
-				{
-					title: "CodeCraft",
-					description: "Abertura da minha empresa, projeto completamente desenvolvido por mim em um projeto fullstack"
+					description: "Trabalhei como freelancer para desenvolver um site fullstack para uma empresa de consultorias"
 				},
 				{
 					title: "Microserviço de Login e de Entrega de Formulários",
 					description: "Microserviço em backend desenvolvido, para suprir a nova ideia da cliente da Vitais Consultoria"
+				},
+				{
+					description: "CRUD de um sistema de login completo, feito em typescript com express, com todo o banco de dados sqlite3 configurado"
+				},
+				{
+					description: "(opensource) API de um sistema para cálculo de juros, com tudo devidamente documentado, feito em express e typescript"
 				}
 			]
 		},
@@ -140,8 +142,8 @@ export const translations = {
 		hero: {
 			greeting: "Hi, I'm",
 			name: "Pedro Moitinho",
-			title: "Fullstack Web",
-			description: "I architect and develop real solutions for web engineering.",
+			title: "Fullstack Developer",
+			description: "I architect and develop real solutions",
 			cta: "Discover My Work",
 			contact: "Contact"
 		},
@@ -162,16 +164,16 @@ export const translations = {
 			title: "Experience",
 			jobs: [
 				{
-					title: "Fullstack Developer",
+					title: "Fullstack Developer Intern",
 					company: "Infoativa",
 					period: "10/24 - 05/2025",
-					description: "• We developed the company's chatbot using Node and React.<br><br>• I integrated the Twilio API for real-time communication via messaging and voice.<br><br>• I implemented improvements, increasing customer service efficiency and user satisfaction."
+					description: "• Development of a chatbot project using React, Typescript, Express, Postgre, Twilio and Git.<br><br>• Helped to solve daily bugs of the company’s project"
 				},
 				{
-					title: "Fullstack Developer",
+					title: "Backend Developer Intern",
 					company: "Lupalina",
 					period: "01/24 - 10/24",
-					description: "• I helped the company maintain the TOTVS system, manage databases, etc..."
+					description: "• Database Management (MySQL), and helped integrating it with the backend project (Java,Spring) via REST API endpoints and microsservices."
 				},
 			]
 		},
@@ -204,22 +206,24 @@ export const translations = {
 			title: "My Projects",
 			filters: {
 				all: "All",
-				web: "Web",
+				web: "Fullstack",
 				backend: "Backend"
 			},
 			viewProject: "View Project",
 			list: [
 				{
 					title: "Vitais Consultoria",
-					description: "Real project, carried out for a consulting company in my city"
-				},
-				{
-					title: "CodeCraft",
-					description: "Opening of my company, project completely developed by me in a fullstack project"
+					description: "Worked as a freelancer to develop an fullstack website for a consultancy company"
 				},
 				{
 					title: "Login and Form Delivery Microservice",
-					description: "Backend microservice developed to supply the new idea from the Vitais Consultoria client"
+					description: "Developed an login microsservice for the Vitais Consultoria project, but, I architected it as an microsservice aiming to use it on other projects"
+				},
+				{
+					description: "Login CRUD System, made in express with typescript with everything configured to work with sqlite3 database"
+				},
+				{
+					description: "(opensource) API made in express with typescript to calculate fees, everything is documented for public use"
 				}
 			]
 		},

@@ -5,6 +5,7 @@ import { useLanguage } from "../../contexts/LanguageContext";
 import { translations } from "../../translations/translations";
 import "./Projects.css";
 import Codecraft from "./codecraft.jpeg";
+import Vitais from "./vitais.png";
 
 const Projects = () => {
 	const [activeFilter, setActiveFilter] = useState("all");
@@ -19,26 +20,35 @@ const Projects = () => {
 			category: "web",
 			technologies: ["React", "Typescript", "EmailJS", "IMGBot"],
 			image:
-				"https://media.licdn.com/dms/image/v2/D4D22AQGcssAVx9oyqw/feedshare-shrink_1280/B4DZbhwwmBIAAo-/0/1747544384473?e=1750291200&v=beta&t=zebAYTujf-GC8x9esy-SI5cLtoBagCAlgVPb4DSXWis",
+				Vitais,
 			link: "https://vitaisconsultoria.com/",
 		},
 		{
 			id: 2,
 			title: t.projects.list[1].title,
 			description: t.projects.list[1].description,
-			category: "web",
-			technologies: ["React", "Typescript", "EmailJS"],
-			image: Codecraft,
-			link: "https://codecraft.social/",
-		},
-		{
-			id: 3,
-			title: t.projects.list[2].title,
-			description: t.projects.list[2].description,
 			category: "backend",
 			technologies: ["Spring", "Docker", "Spring Security", "JAuth", "Microserviço", "Maven"],
 			image: "https://www.showmetech.com.br/wp-content/uploads//2018/11/conheca-cursos-de-programacao-gratis-1132x600-jpg-webp.webp",
 			link: "https://github.com/pedromoitinho/loginMicroservice",
+		},
+		{
+			id: 3,
+			title: "LoginCRUD",
+			description: t.projects.list[2].description,
+			category: "backend",
+			technologies: ["Typescript", "Express", "sqlite3", "cors", "typeorm"],
+			image: "https://www.showmetech.com.br/wp-content/uploads//2018/11/conheca-cursos-de-programacao-gratis-1132x600-jpg-webp.webp",
+			link: "https://github.com/pedromoitinho/login-crud",
+		},
+		{
+			id: 4,
+			title: "Fee-API",
+			description: t.projects.list[3].description,
+			category: "backend",
+			technologies: ["Typescript", "Express", "sqlite3", "cors", "typeorm"],
+			image: "https://www.showmetech.com.br/wp-content/uploads//2018/11/conheca-cursos-de-programacao-gratis-1132x600-jpg-webp.webp",
+			link: "https://github.com/pedromoitinho/fee-api",
 		},
 	];
 

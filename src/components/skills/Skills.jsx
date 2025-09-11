@@ -9,11 +9,11 @@ const Skills = () => {
 	const skillCategories = [
 		{
 			title: t.skills.categories.frontend,
-			skills: ["React", "Typescript"],
+			skills: ["React", "Next.JS", "Axios", "HTML", "CSS"],
 		},
 		{
 			title: t.skills.categories.backend,
-			skills: ["Java / Spring", "Api Development", "Docker", "Node.JS / Express", "Microsservices"],
+			skills: ["Typescript", "Java", "Spring", "Express.JS", "Nest.JS", "REST", "Docker", "Databases(Postgre, SQL, NoSQL, Mongo)"],
 		},
 		{
 			title: t.skills.categories.tools,
@@ -22,7 +22,8 @@ const Skills = () => {
 				"Postman",
 				"Swagger",
 				"AWS",
-				"Clean Code",
+				"Redis",
+				"Deploy"
 			],
 		},
 	];
